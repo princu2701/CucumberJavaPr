@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.Given;
@@ -25,7 +25,7 @@ public class SecondOpinion {
 
 	@Given("Open Browser and Enter Sparsh Url")
 	public void open_browser_and_enter_sparsh_url() {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
